@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/x-icon" href="/webroot/img/icono.png">
+	<meta charset="UTF-8"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="/webroot/js/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#header').load('/vistas/comunes/header.html');
+		$('#footer').load('/vistas/comunes/footer.html');
+	});
+</script>
+<title>Game Board Bark S.L</title>
+</head>
+<body>
+	<div class="h-screen flex flex-col ">
+
+		<div id="header"></div>
+		<div class="flex  max-w-full justify-center relative my-16">
+			<div
+				class="flex">
+				<div class="relative overflow-x-auto shadow-md sm:rounded-lg"
+					id="listaCarrito">
+					<table
+						class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+						<thead
+							class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+							<tr>
+
+								<th scope="col" class="px-6 py-3">Nombre</th>
+								<th scope="col" class="px-6 py-3">Precio</th>
+								<th scope="col" class="px-6 py-3">Cantidad</th>
+								<th scope="col" class="px-6 py-3">Categoria</th>
+								<th scope="col" class="px-6 py-3">Total</th>
+								<th scope="col" class="px-6 py-3">Cantidad eliminar</th>
+								<th scope="col" class="px-6 py-3">Acciones</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr
+								class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+								<td class="px-6 py-4">¿Alguien ha probado este juego?</td>
+								<td class="px-6 py-4">30€</td>
+								<td class="px-6 py-4">2</td>
+								<td class="px-6 py-4">Humor</td>
+								<td class="px-6 py-4">60€</td>
+								<td class="px-6 py-4">
+									<form action=""
+										method="get" id="formComprar">
+										 <input type="number"
+											id="totalC" name="totalProductoCompra" placeholder="1"
+											min="1"
+											class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+											>
+								</td>
+								<td class="px-6 py-4" id="gestionUser"><input type="submit"
+									id="sendProdc" value="Eliminar"
+									class="font-medium text-blue-600 dark:text-blue-500 hover:underline" />
+									</form>
+							</tr>
+                            <tr
+								class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+								<td class="px-6 py-4">House of the hill, Betrayal</td>
+								<td class="px-6 py-4">33€</td>
+								<td class="px-6 py-4">1</td>
+								<td class="px-6 py-4">Terror</td>
+								<td class="px-6 py-4">33€</td>
+								<td class="px-6 py-4">
+									<form action=""
+										method="get" id="formComprar">
+										<input type="number"
+											id="totalC" name="totalProductoCompra" placeholder="1"
+											min="1"
+											class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+											>
+								</td>
+								<td class="px-6 py-4" id="gestionUser"><input type="submit"
+									id="sendProdc" value="Eliminar"
+									class="font-medium text-blue-600 dark:text-blue-500 hover:underline" />
+									</form>
+							</tr>
+						</tbody>
+					</table>
+					<div class="flex flex-col">
+					<form action="" method="get" class="flex sm:justify-center items-center my-4">
+						<label for="metodoPago" class="mr-3">Metodo de pago</label> <select
+							name="metodoPago" id="metodoPago">
+							<optgroup label="metodoPago">
+								<option value="paypal" selected="selected">Paypal</option>
+								<option value="targeta">Targeta</option>
+							</optgroup>
+						</select> 
+						<a href="/index.html" class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-transparent rounded hover:bg-indigo-100 hover:text-indigo-700 transition-colors duration-300">
+							Comprar</a>
+					</form>
+				</div>
+                    <div class="flex sm:justify-center my-4">
+						<a href="/index.html" class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-transparent rounded hover:bg-indigo-100 hover:text-indigo-700 transition-colors duration-300">
+							Seguir comprado</a>
+                    </div>
+                  
+				</div>
+			</div>
+			
+
+		</div>
+		<div id="footer" class="flex flex-col mt-auto"></div>
+		</div>
+		
+</body>
+</html>
+

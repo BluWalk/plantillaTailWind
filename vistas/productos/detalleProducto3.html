@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="icon" type="image/x-icon" href="/webroot/img/icono.png">
+	<meta charset="UTF-8"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="/webroot/js/jquery-3.6.0.min.js"></script>
+<script src="/webroot/js/verificacion.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#header').load('/vistas/comunes/headerAdministrador.html');
+        $('#footer').load('/vistas/comunes/footer.html');
+    });
+</script>
+<title>Game Board Bark S.L</title>
+</head>
+<body>
+	<div class="h-screen flex flex-col">
+		<div id="header"></div>
+
+
+		<div class="flex  max-w-[70%] relative left-32 ">
+				<div class="w-2/3 bg-cover flex justify-center items-center">
+						<img src="/webroot/img/hero_quest.jpg" class="max-h-[70%]">
+				</div>
+				<div class="w-2/3 p-4 flex flex-col justify-around">
+					<h1 class="text-gray-900 font-bold text-2xl">
+						HeroQuest
+					</h1>
+					<p class="mt-2 text-gray-600 text-sm">
+						El juego de mesa HeroQuest de Avalon Hill es un juego de fantasía en el que los jugadores deben trabajar juntos para luchar contra Zargon y su sequito de monstruos aterradores.
+						
+					</p>
+					<div class="flex item-center mt-2">
+					</div>
+					<div class="flex item-center justify-between mt-3">
+						<h1 class="text-gray-700 font-bold text-xl precio">
+							
+						</h1>
+						</div>
+                        <div class="flex item-center mt-2">
+							<span class="text-gray-900 font-bold text-2xl">
+								Impuesto: 
+							</span>
+							
+							<span class="text-gray-900  text-2xl ml-3">
+								 21
+							</span>
+						</div>
+                        <div class="flex item-center mt-2">
+							<span class="text-gray-900 font-bold text-2xl">
+								Stock 
+							</span>
+							
+							<span class="text-gray-900  text-2xl ml-3">
+								3
+							</span>
+						</div>
+						<div class="flex item-center mt-2">
+							<span class="text-gray-900 font-bold text-2xl">
+								Precio Compra: 
+							</span>
+							
+							<span class="text-gray-900  text-2xl ml-3">
+								54,33€
+							</span>
+						</div>
+						<div class="flex item-center mt-2">
+							<span class="text-gray-900 font-bold text-2xl">
+								Precio Venta: 
+							</span>
+							
+							<span class="text-gray-900  text-2xl ml-3">
+								99€
+							</span>
+						</div>
+                        <div class="flex item-center mt-2">
+							<span class="text-gray-900 font-bold text-2xl">
+								Categorias: 
+							</span>
+							
+							<span class="text-gray-900  text-2xl ml-3">
+								Fantasía
+							</span>
+						</div>
+						
+						
+						<form action="" method="get"
+							id="formComprar">
+							
+							<a href="/vistas/productos/editarProducto3.html" id="sendProdc" name="sendProdc"
+								class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded"
+								>Editar</a>
+                                	
+							<a href="/vistas/administrador.html" id="sendProdc" name="sendProdc"
+                            class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded"
+                            >Volver</a>
+							
+						</form>
+						</div>
+					
+</div>
+		<div id="footer" class="flex flex-col mt-auto"></div>
+</div>
+
+</body>
+</html>

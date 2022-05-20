@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/x-icon" href="/webroot/img/icono.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="/webroot/js/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#footer').load('/vistas/comunes/footer.html');
+        $('#header').load('/vistas/comunes/headerAdministrador.html');
+	});
+</script>
+<meta charset="UTF-8"/>
+
+<title>Game Board Bark S.L</title>
+</head>
+<body>
+	<div class="h-screen flex flex-col">
+
+        <div id="header"></div>
+		<div class="flex lg:flex-row my-16" >
+			<div class="flex" >
+                <aside class="w-64 " aria-label="Sidebar">
+                    <div class="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
+                       <ul class="space-y-2">
+                             <li>
+                             <a href="/vistas/administrador.html"class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-blue-500 dark:hover:bg-blue-700">
+                                <svg class="h-8 w-8 text-purple-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>  <line x1="12" y1="22.08" x2="12" y2="12"></line></svg>        
+                                <span class="ml-3">Gestinonar Productos</span>
+                             </a>
+                          </li>
+                          <li>
+                            <a href="/vistas/crearProducto.html"class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-blue-500 dark:hover:bg-blue-700">
+                                <svg class="h-8 w-8 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z"></path>
+                                                 </svg>
+                                <span class="ml-3">Añadir Producto</span>
+                            </a>
+                         </li>
+                         <li>
+                            <a href="/vistas/gestionarClientes.html"class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-blue-500 dark:hover:bg-blue-700">
+                                <svg class="h-8 w-8 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                                  </svg>
+                                <span class="ml-3">Gestionar Clientes</span>
+                            </a>
+                         </li>
+                         <li>
+                            <a href="/vistas/crearUsuarioAdmin.html"class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-blue-500 dark:hover:bg-blue-700">
+                                <svg class="h-8 w-8 text-purple-700" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"></path>  <circle cx="9" cy="7" r="4"></circle>  <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>  <path d="M16 11h6m-3 -3v6"></path></svg>
+                                <span class="ml-3">Añadir Cliente</span>
+                            </a>
+                         </li>
+                         <li>
+                            <a href="/vistas/perfil.html"class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-blue-500 dark:hover:bg-blue-700">
+                                <svg class="h-8 w-8 text-purple-700" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"></path>  <circle cx="12" cy="7" r="4"></circle>  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path></svg>
+                                <span class="ml-3">Ver perfil</span>
+                            </a>
+                         </li>
+                         <li>
+                            <a href="/vistas/administrarPedidos.html"class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-blue-500 dark:hover:bg-blue-700">
+                                <svg class="h-8 w-8 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                                  </svg>
+                                <span class="ml-3">Validar Pedidos</span>
+                            </a>
+                         </li>
+                       </ul>
+                    </div>
+                 </aside>
+                </div>
+
+		<div class="relative overflow-x-auto  flex flex-col justify-center xl:items-center w-full lg:items-start" id="lista">
+			<table
+				class=" m-16 text-sm text-left rounded sm:rounded-lg shadow-md text-gray-500 dark:text-gray-400 md:w-1/2">
+				<thead
+					class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+					<tr>
+						<th scope="col" class="px-6 py-3">Nombre</th>
+						<th scope="col" class="px-6 py-3">1º Apellido</th>
+						<th scope="col" class="px-6 py-3">2º Apellido</th>
+						<th scope="col" class="px-6 py-3">Dni</th>
+						<th scope="col" class="px-6 py-3">Telefono</th>
+						<th scope="col" class="px-6 py-3">Correo</th>
+						<th scope="col" class="px-6 py-3">Rol</th>
+						<th scope="col" class="px-6 py-3">Accion</th>
+					
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+						<th scope="row"
+							class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">Manuel</th>
+						<td class="px-6 py-4">Perez</td>
+						<td class="px-6 py-4">Plata</td>
+						<td class="px-6 py-4">79864544P</td>
+						<td class="px-6 py-4">654987321</td>
+						<td class="px-6 py-4">bla@bla.bla</td>
+						<td class="px-6 py-4">Usuario</td>
+						<td class="px-6 py-4 text-right" id="gestionUser">
+						<form action=""method="get" class="formUser">
+
+								 <a href="/vistas/editarUsuario.html" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Editar</a>
+						</form>
+						<form action=""
+							method="get" class="formUser">
+
+						<input type="submit" id="borrarCliente" name="borrarCliente" value="Borrar" class="font-medium text-blue-600 dark:text-blue-500 hover:underline"/>
+						</form>
+						</td>
+				</tr>
+				<tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+					<th scope="row"
+						class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">Admin</th>
+					<td class="px-6 py-4">Admin</td>
+					<td class="px-6 py-4">Admin</td>
+					<td class="px-6 py-4">48675544J</td>
+					<td class="px-6 py-4">789456321</td>
+					<td class="px-6 py-4">Admin@admin.admin</td>
+					<td class="px-6 py-4">Administrador</td>
+					<td class="px-6 py-4 text-right" id="gestionUser">
+					<form action=""method="get" class="formUser">
+
+		<a href="/vistas/editarAdmin.html" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Editar</a>
+					</form>
+					</td>
+			</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+    <div id="footer" class="flex flex-col mt-auto"></div>
+</div>
+</body>
+</html>
