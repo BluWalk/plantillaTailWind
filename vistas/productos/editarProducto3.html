@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/x-icon" href="/webroot/img/icono.png">
+    <meta charset="UTF-8"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="/webroot/js/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#header').load('/vistas/comunes/headerAdministrador.html');
+        $('#footer').load('/vistas/comunes/footer.html');
+    });
+</script>
+<title>Game Board Bark S.L</title>
+</head>
+<body>
+    <div class="h-screen flex flex-col">
+		<div id="header"></div>
+		<div class=" flex justify-center my-16" >
+		
+		<form action=""  id="fromCrearProducto"	method="get"  class="w-full max-w-lg">
+			
+			<div class="flex flex-wrap -mx-3 mb-6">
+				<div class="w-full md:w-2/2 px-3 mb-6 md:mb-0">
+					<label
+						class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+						for="grid-first-name"> Nombre Producto </label> <input value="HeroQuest"
+						class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+						type="text" id="nombreProducto" name="nombreProducto">
+				</div>
+				
+			</div>
+            <div class="flex flex-wrap -mx-3 mb-6">
+				
+				<div class="w-full md:w-2/2 px-3 mb-6 md:mb-0">
+					<label
+						class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+						for="grid-last-name">Url Imagen </label> <input value="hero_quest.jpg"
+						class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+						type="text" id="imagen" name="imagen">
+
+				</div>
+			</div>
+			<div class="flex flex-wrap -mx-3 mb-6">
+
+				<div class="w-full md:w-3/3 px-3">
+					<label
+						class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+						for="grid-last-name"> Descripción del producto </label>
+					<textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+						id="descripcionProducto" name="descripcionProducto">El juego de mesa HeroQuest de Avalon Hill es un juego de fantasía en el que los jugadores deben trabajar juntos para luchar contra Zargon y su sequito de monstruos aterradores.</textarea>
+				</div>
+
+			</div>	
+			<div class="flex flex-wrap -mx-3 mb-6">
+				<div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+					<label
+						class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+						for="grid-first-name"> Impuesto </label> <input value="21"
+						class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+						type="number" id="impuesto"	name="impuesto">
+
+
+				</div>
+				<div class="w-full md:w-1/3 px-3">
+					<label
+						class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+						for="grid-last-name"> Precio de compra </label> <input value="54.33"
+						class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+						type="number" step="any" id="precioCompra" name="precioCompra">
+				</div>
+
+                <div class="w-full md:w-1/3 px-3">
+					<label
+						class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+						for="grid-last-name"> Precio de venta </label> <input value="99"
+						class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+						type="number" id="precioVenta" step="any"  name="precioVenta">
+				</div>
+
+			</div>
+			<div class="flex flex-wrap -mx-3 mb-6">
+				
+				<div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+					<label
+						class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+						for="grid-first-name"> Stock </label> <input value="3"
+						class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+						type="number" id="stock" name="stock">
+
+
+				</div>
+                <div class="w-full md:w-2/3 px-3">
+					<label
+						class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+						for="grid-last-name"> Categorias </label> <input value="Fantasía"
+						class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+						type="text" id="categorias" name="categorias">
+				</div>
+			
+				
+
+			</div>
+
+			<div class="flex flex-wrap sm:justify-center mb-6">
+				<div class="w-full md:w-1/2 px-3 mb-6 md:mb-0 flex justify-center">
+					 <a href="/vistas/administrador.html"  class="p-2 lg:px-4 relative md:mx-2 text-indigo-600 text-center border border-transparent rounded hover:bg-indigo-100 hover:text-indigo-700 transition-colors duration-300">
+					Cancelar</a>
+				</div>
+				<div class="w-full md:w-1/2 px-3 mb-6 md:mb-0 flex justify-center">
+				  <a href="/vistas/administrador.html"
+					class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-transparent rounded hover:bg-indigo-100 hover:text-indigo-700 transition-colors duration-300">
+                    Editar Producto</a>
+				</div>
+			</div>
+
+
+
+
+		</form>
+
+	</div>
+	<div id="footer" class="flex flex-col mt-auto"></div>
+</div>
+</body>
+</html>

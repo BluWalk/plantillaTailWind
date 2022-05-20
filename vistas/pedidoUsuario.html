@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<link rel="icon" type="image/x-icon" href="/webroot/img/icono.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="/webroot/js/jquery-3.6.0.min.js"></script>
+<script src="/webroot/js/verificacion.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#header').load('/vistas/comunes/header.html');
+        $('#footer').load('/vistas/comunes/footer.html');
+    });
+</script>
+<title>Game Board Bark S.L</title>
+</head>
+<body>
+	<div class="h-screen flex flex-col ">
+        <div id="header"></div>
+		<div class="flex justify-center h-full items-center my-16" >
+			<div class="relative overflow-x-auto shadow-md sm:rounded-lg h-fit">
+				<table
+					class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+					<thead
+						class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+						<tr>
+
+							<!-- <th scope="col" class="px-6 py-3">Numero de pedido</th> -->
+							<th scope="col" class="px-6 py-3">Estado del pedido</th>
+							<th scope="col" class="px-6 py-3">Fecha del pedido</th>
+							<th scope="col" class="px-6 py-3">Metodo de pago</th>
+							<th scope="col" class="px-6 py-3">Total</th>
+							<th scope="col" class="px-6 py-3">Acciones</th>
+
+
+						</tr>
+					</thead>
+				
+					<tbody>
+						<tr
+							class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+		
+							<td class="px-6 py-4">Pendiente de envio</td>
+							<td class="px-6 py-4">17/05/2022</td>
+							<td class="px-6 py-4">Paypal</td>
+							<td class="px-6 py-4">199€</td>
+							<td class="px-6 py-4">
+								<form action="DetallesPedido"
+									method="get" class="formUser">
+									 <a href="/vistas/detallesPedido/detallePedidoUsuario1.html"
+										class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Detalles del pedido</a>
+								</form>
+							
+						</tr>
+						<tr
+							class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+		
+							<td class="px-6 py-4">Enviado</td>
+							<td class="px-6 py-4">17/05/2022</td>
+							<td class="px-6 py-4">Targeta</td>
+							<td class="px-6 py-4">624€</td>
+							<td class="px-6 py-4">
+								<form action="DetallesPedido"
+									method="get" class="formUser">
+									<a href="/vistas/detallesPedido/detallePedidoUsuario2.html"
+										class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Detalles del pedido</a>
+								</form>
+							
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+		</div>
+    <div id="footer" class="flex flex-col mt-auto"></div>
+	</div>
+
+</body>
+</html>

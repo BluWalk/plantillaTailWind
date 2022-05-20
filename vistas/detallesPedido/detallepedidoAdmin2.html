@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/x-icon" href="/webroot/img/icono.png">
+	<meta charset="UTF-8"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="/webroot/js/jquery-3.6.0.min.js"></script>
+<script src="/webroot/js/verificacion.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#header').load('/vistas/comunes/headerAdministrador.html');
+        $('#footer').load('/vistas/comunes/footer.html');
+    });
+</script>
+<title>Game Board Bark S.L</title>
+</head>
+<body>
+    <div class="h-screen flex flex-col">
+		<div id="header"></div>
+		<div class=" flex justify-center" >
+
+			<div class="w-3/4 bg-white px-10 py-10">
+
+				<div class="flex justify-between  pb-8">
+					<h1 class="font-semibold text-2xl">Detalles de pedido</h1>
+					<h1 class="font-semibold text-2xl">Enviado</h1>
+				</div>
+				<div class="flex justify-between border-b pb-8">
+					<h1 class="font-semibold text-2xl">Fecha de envio</h1>
+					<h1 class="font-semibold text-2xl">15/05/2022</h1>
+				</div>
+				<div class="flex mt-10 mb-5">
+					<h3 class="font-semibold text-gray-600 text-xs uppercase w-2/5">Producto</h3>
+                    <h3
+						class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Nombre</h3>
+					<h3
+						class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Cantidad</h3>
+					<h3
+						class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Price</h3>
+					<h3
+						class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Total</h3>
+				</div>
+
+				<div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
+					<div class="flex w-2/5">
+						<!-- product -->
+						<div class="w-20">
+							<img class=""
+								src="/webroot/img/betrayal_at_hose.jpg"
+								alt="battlestar_galactica">
+						</div>
+						<div class="flex flex-col justify-between ml-4 flex-grow">
+							<span class="font-bold text-sm"></span>
+						</div>
+					</div>
+                    <div class="flex justify-center w-1/5">
+						<span class="font-bold text-sm">House of the hill, Betrayal</span>
+					</div>
+					<div class="flex justify-center w-1/5">
+						<span class="font-bold text-sm">5</span>
+					</div>
+					<span class="text-center w-1/5 font-semibold text-sm">33€</span>
+					<span class="text-center w-1/5 font-semibold text-sm">165€</span>
+				</div>
+                <div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
+					<div class="flex w-2/5">
+						<!-- product -->
+						<div class="w-20">
+							<img 
+								src="/webroot/img/hero_quest.jpg"
+								alt="hero_quest">
+						</div>
+						<div class="flex flex-col justify-between ml-4 flex-grow">
+							<span class="font-bold text-sm"></span>
+						</div>
+					</div>
+                    <div class="flex justify-center w-1/5">
+						<span class="font-bold text-sm">HeroQuest</span>
+					</div>
+					<div class="flex justify-center w-1/5">
+						<span class="font-bold text-sm">1</span>
+					</div>
+					<span class="text-center w-1/5 font-semibold text-sm">99€</span>
+					<span class="text-center w-1/5 font-semibold text-sm">99€</span>
+				</div>
+				<div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
+					<div class="flex w-2/5">
+						<!-- product -->
+						<div class="w-20">
+							<img 
+								src="/webroot/img/alguien_ha_probado_este_juego.jpg"
+								alt="hero_quest">
+						</div>
+						<div class="flex flex-col justify-between ml-4 flex-grow">
+							<span class="font-bold text-sm"></span>
+						</div>
+					</div>
+                    <div class="flex justify-center w-1/5">
+						<span class="font-bold text-sm">¿Alguien ha probado este juego?</span>
+					</div>
+					<div class="flex justify-center w-1/5">
+						<span class="font-bold text-sm">12</span>
+					</div>
+					<span class="text-center w-1/5 font-semibold text-sm">30€</span>
+					<span class="text-center w-1/5 font-semibold text-sm">360€</span>
+				</div>
+                <div class="border-y-2  h-12 flex justify-end items-center">
+                    <span class="text-center relative right-[15rem]  font-semibold text-sm m-2">Total de compra: </span>
+                    <span class="text-center relative right-[6rem] font-semibold text-sm">624€</span>
+                </div>
+				
+				<form action=""	method="get" class="pt-6">
+
+
+					<a href="/vistas/administrarPedidos.html" class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-transparent rounded hover:bg-indigo-100 hover:text-indigo-700 transition-colors duration-300" >Volver</a>
+
+				
+				</form>
+
+
+			</div>
+
+	</div>
+    <div id="footer" class="flex flex-col mt-auto"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/x-icon" href="/webroot/img/icono.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="/webroot/js/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#footer').load('/vistas/comunes/footer.html');
+        $('#header').load('/vistas/comunes/headerAdministrador.html');       
+      
+	});
+</script>
+<meta charset="UTF-8"/>
+
+<title>Game Board Bark S.L</title>
+</head>
+<body>
+	<div class="h-screen flex flex-col">
+
+        <div id="header"></div>
+
+            <div class="flex relative">
+                <div class="flex" >
+                    <aside class="w-64 relative mt-24" aria-label="Sidebar">
+                        <div class="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
+                           <ul class="space-y-2">
+                                 <li>
+                                 <a href="/vistas/administrador.html"class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-blue-500 dark:hover:bg-blue-700">
+                                    <svg class="h-8 w-8 text-purple-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>  <line x1="12" y1="22.08" x2="12" y2="12"></line></svg>        
+                                    <span class="ml-3">Gestinonar Productos</span>
+                                 </a>
+                              </li>
+                              <li>
+                                <a href="/vistas/crearProducto.html"class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-blue-500 dark:hover:bg-blue-700">
+                                    <svg class="h-8 w-8 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z"></path>
+                                                     </svg>
+                                    <span class="ml-3">Añadir Producto</span>
+                                </a>
+                             </li>
+                             <li>
+                                <a href="/vistas/gestionarClientes.html"class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-blue-500 dark:hover:bg-blue-700">
+                                    <svg class="h-8 w-8 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                                      </svg>
+                                    <span class="ml-3">Gestionar Clientes</span>
+                                </a>
+                             </li>
+                             <li>
+                                <a href="/vistas/crearUsuarioAdmin.html"class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-blue-500 dark:hover:bg-blue-700">
+                                    <svg class="h-8 w-8 text-purple-700" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"></path>  <circle cx="9" cy="7" r="4"></circle>  <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>  <path d="M16 11h6m-3 -3v6"></path></svg>
+                                    <span class="ml-3">Añadir Cliente</span>
+                                </a>
+                             </li>
+                             <li>
+                                <a href="/vistas/perfil.html"class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-blue-500 dark:hover:bg-blue-700">
+                                    <svg class="h-8 w-8 text-purple-700" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"></path>  <circle cx="12" cy="7" r="4"></circle>  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path></svg>
+                                    <span class="ml-3">Ver perfil</span>
+                                </a>
+                             </li>
+                             <li>
+                                <a href="/vistas/administrarPedidos.html"class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-blue-500 dark:hover:bg-blue-700">
+                                    <svg class="h-8 w-8 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                                      </svg>
+                                    <span class="ml-3">Validar Pedidos</span>
+                                </a>
+                             </li>
+                           </ul>
+                        </div>
+                     </aside>
+                    </div>
+                    
+                <div>
+			<div class="flex flex-wrap content-start max-h-full  justify-around space-y-6">
+				<div
+					class="flex min-w-[30%] max-w-md bg-white shadow-lg rounded-lg overflow-hidden max-h-[22em]">
+					<div class="w-2/3 bg-cover"
+						style="background-image: url('/webroot/img/alguien_ha_probado_este_juego.jpg')">
+					</div>
+					<div class="w-2/3 p-4 flex flex-col">
+						<h1 class="text-gray-900 font-bold text-2xl">
+							<a href="/vistas/productos/detalleProducto1.html">¿Alguien ha probado este juego?</a>
+						</h1>
+						<p class="mt-2 text-gray-600 text-sm"></p>
+						<div class="flex item-center mt-2">¿Alguien ha probado este
+							juego? es un caótico juego de cartas lleno de humor y de momentos
+							absurdos. ¡solo déjate llevar y disfruta!</div>
+							<div class="flex item-center justify-between mt-auto">
+							<h1 class="text-gray-700 font-bold text-xl ">30€</h1>
+							<br>
+							<form action="" method="get" id="formEditar">
+								 <a href="/vistas/productos/editarProducto1.html"
+									id="sendProdc" name="sendProdc"
+									class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded"
+									>Editar</a>
+							</form>
+                            <form action="" method="get" id="formBorrar">
+                                <a href=""
+									id="sendProdc" name="sendProdc"
+									class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded"
+									>Borrar</a>
+                           </form>
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex min-w-[30%] max-w-md bg-white shadow-lg rounded-lg overflow-hidden max-h-[22em] relative ">
+					<div class="w-2/3 bg-cover"
+						style="background-image: url('/webroot/img/battlestar_galactica.jpg')">
+					</div>
+					<div class="w-2/3 p-4 flex flex-col">
+						<h1 class="text-gray-900 font-bold text-2xl">
+							<a href="/vistas/productos/detalleProducto2.html">BattleStar Galactica</a>
+						</h1>
+						<p class="mt-2 text-gray-600 text-sm"></p>
+						<div class="flex item-center mt-2">Battlestar Galactica:
+							Reproduce toda la emoción y desesperada lucha por la
+							supervivencia de la especie.</div>
+						<div class="flex item-center justify-between mt-auto">
+							<h1 class="text-gray-700 font-bold text-xl ">50€</h1>
+							<br>
+							<form action="" method="get" id="formEditar">
+								<a href="/vistas/productos/editarProducto2.html"
+								   id="sendProdc" name="sendProdc"
+								   class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded"
+								   >Editar</a>
+						   </form>
+						   <form action="" method="get" id="formBorrar">
+							   <a href=""
+								   id="sendProdc" name="sendProdc"
+								   class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded"
+								   >Borrar</a>
+						  </form>
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex min-w-[30%] max-w-md bg-white shadow-lg rounded-lg overflow-hidden max-h-[22em] relative ">
+					<div class="w-2/3 bg-cover"
+						style="background-image: url('/webroot/img/hero_quest.jpg')">
+					</div>
+						<div class="w-2/3 p-4 flex flex-col">
+						<h1 class="text-gray-900 font-bold text-2xl">
+							<a href="/vistas/productos/detalleProducto3.html">HeroQuest</a>
+						</h1>
+						<p class="mt-2 text-gray-600 text-sm"></p>
+						<div class="flex item-center mt-2">El juego de mesa
+							HeroQuest de Avalon Hill es un juego de fantasía en el que los
+							jugadores deben trabajar juntos para luchar contra Zargon y su
+							sequito de monstruos aterradores.</div>
+							<div class="flex item-center justify-between mt-auto">
+							<h1 class="text-gray-700 font-bold text-xl ">99€</h1>
+							<br>
+							<form action="" method="get" id="formEditar">
+								<a href="/vistas/productos/editarProducto3.html"
+								   id="sendProdc" name="sendProdc"
+								   class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded"
+								   >Editar</a>
+						   </form>
+						   <form action="" method="get" id="formBorrar">
+							   <a href=""
+								   id="sendProdc" name="sendProdc"
+								   class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded"
+								   >Borrar</a>
+						  </form>
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex min-w-[30%] max-w-md bg-white shadow-lg rounded-lg overflow-hidden max-h-[22em] relative">
+					<div class="w-2/3 bg-cover"
+						style="background-image: url('/webroot/img/betrayal_at_hose.jpg')">
+					</div>
+					<div class="w-2/3 p-4 flex flex-col">
+						<h1 class="text-gray-900 font-bold text-2xl">
+							<a href="/vistas/productos/detalleProducto4.html">House of the hill, Betrayal</a>
+						</h1>
+						<p class="mt-2 text-gray-600 text-sm"></p>
+						<div class="flex item-center mt-2">Juego de terror donde un
+							grupo de amigos/aventureros entran sin saber que terribles
+							aventuras pueden tener.</div>
+							<div class="flex item-center justify-between mt-auto">
+							<h1 class="text-gray-700 font-bold text-xl ">33€</h1>
+							<br>
+							<form action="" method="get" id="formEditar">
+								<a href="/vistas/productos/editarProducto4.html"
+								   id="sendProdc" name="sendProdc"
+								   class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded"
+								   >Editar</a>
+						   </form>
+						   <form action="" method="get" id="formBorrar">
+							   <a href=""
+								   id="sendProdc" name="sendProdc"
+								   class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded"
+								   >Borrar</a>
+						  </form>
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex min-w-[30%] max-w-md bg-white shadow-lg rounded-lg overflow-hidden max-h-[22em] relative">
+					<div class="w-2/3 bg-cover"
+						style="background-image: url('/webroot/img/superFantasyMorroFeos.jpg')">
+					</div>
+					<div class="w-2/3 p-4 flex flex-col">
+						<h1 class="text-gray-900 font-bold text-2xl">
+							<a href="/vistas/productos/detalleProducto5.html">Super Fantasy El ataque de los MorroFeos</a>
+						</h1>
+						<p class="mt-2 text-gray-600 text-sm"></p>
+						<div class="flex item-center mt-2">Juego de rol basado en
+							dungeon and dragon en el cual no hay master y los jugadores viven
+							una aventura de fantasia en unas mazmorras.</div>
+							<div class="flex item-center justify-between mt-auto">
+							<h1 class="text-gray-700 font-bold text-xl ">38€</h1>
+							<br>
+							<form action="" method="get" id="formEditar">
+								<a href="/vistas/productos/editarProducto5.html"
+								   id="sendProdc" name="sendProdc"
+								   class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded"
+								   >Editar</a>
+						   </form>
+						   <form action="" method="get" id="formBorrar">
+							   <a href=""
+								   id="sendProdc" name="sendProdc"
+								   class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded"
+								   >Borrar</a>
+						  </form>
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex min-w-[30%] max-w-md bg-white shadow-lg rounded-lg overflow-hidden max-h-[22em] relative">
+					<div class="w-2/3 bg-cover"
+						style="background-image: url('/webroot/img/la_isla_prohibida.jpg')">
+					</div>
+					<div class="w-2/3 p-4 flex flex-col">
+						<h1 class="text-gray-900 font-bold text-2xl">
+							<a href="/vistas/productos/detalleProducto6.html">La Isla Prohibida</a>
+						</h1>
+						<p class="mt-2 text-gray-600 text-sm"></p>
+						<div class="flex item-center mt-2">Juego de cooperativo de 4
+							personas para rescatar los tesoros perdidos antes de que se
+							inunde la isla.</div>
+							<div class="flex item-center justify-between mt-auto">
+							<h1 class="text-gray-700 font-bold text-xl ">38€</h1>
+							<br>
+							<form action="" method="get" id="formEditar">
+								<a href="/vistas/productos/editarProducto6.html"
+								   id="sendProdc" name="sendProdc"
+								   class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded"
+								   >Editar</a>
+						   </form>
+						   <form action="" method="get" id="formBorrar">
+							   <a href=""
+								   id="sendProdc" name="sendProdc"
+								   class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded"
+								   >Borrar</a>
+						  </form>
+						</div>
+					</div>
+				</div>
+
+
+		</div>
+		<div id="contenedorFiltro">
+			<form action="" method="get" id="filtro" class="flex justify-start md:w-2/3">
+				<div class="w-full md:w-1/3 px-3 mb-6 sm:w-2/6 md:mb-0 mt-12 sm:ml-2 md:ml-20 lg:ml-44 xl:ml-16 " >
+					<label
+						class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+						for="grid-state"> Filtro de busqueda </label>
+					<div class="relative" id="divFiltro">
+						<select name="filtro"
+							class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700  py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+							<option value="name" selected="selected">Nombre</option>
+							<option value="price">Más Barato</option>
+							<option value="terror">Terror</option>
+							<option value="humor">Humor</option>
+							<option value="fantasia">Fantasía</option>
+						</select>
+						<div
+							class="pointer-events-none absolute inset-y-0 right-0 flex top-4 px-2 text-gray-700">
+							<svg class="fill-current h-4 w-4"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+							<path
+									d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+						</div>
+						<input
+							class="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded my-3 relative"
+							type="submit" name="search" id="search" value="Buscar" />
+					</div>
+				</div>
+			</form>
+</div>
+		</div>
+		</div>
+
+		<div id="footer" class="flex flex-col mt-auto"></div>
+		</div>
+	
+	</div>
+
+</body>
+</html>
+
